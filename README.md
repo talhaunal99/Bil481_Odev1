@@ -1,0 +1,1 @@
+This is an application that takes an Integer Arraylist and an integer value as input, gives a boolean result as output.
