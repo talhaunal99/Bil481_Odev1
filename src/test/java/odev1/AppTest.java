@@ -15,17 +15,21 @@ class AppTest {
       ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 8, 3, 6));
       assertTrue(App.search(array, 4, 2));
     }
-
+    public void testFound2() {
+        ArrayList<Integer> array = new ArrayList<>(Arrays.asList(24, 35, 34, 65));
+        assertTrue(App.search(array, 7, 5));
+    }
+  
     @Test
     public void testNotFound() {
-      ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
+      ArrayList<Integer> array = new ArrayList<>(Arrays.asList(2, 6, 8, 4));
       assertFalse(App.search(array, 5, 2));
     }
 
     @Test
     public void testNotFound2() {
-      ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
-      assertFalse(App.search(array, 5, 2));
+      ArrayList<Integer> array = new ArrayList<>(Arrays.asList(10, 11, 12, 14));
+      assertFalse(App.search(array, 3, 5));
     }
 
 
