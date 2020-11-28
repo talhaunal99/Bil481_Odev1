@@ -34,7 +34,7 @@ public class App {
 
       public static void main(String[] args) {
         Logger logger = LogManager.getLogger(App.class);
-        nt port = Integer.parseInt(System.getenv("PORT"));
+        int port = Integer.parseInt(System.getenv("PORT"));
         port(port);
         logger.error("Current port number:" + port);
 
